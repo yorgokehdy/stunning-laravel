@@ -3,6 +3,9 @@ Answers:
 sudo: adding sudo before a command lets the command run with elevated privileges, similar to "Run as administrator" when opening a software, it gives the commmand access of a superuser.
 apt-get: command used to get information and packages from authenticated resources.
 The issue with the curl command in checkpoint 3 was the -- right before installdir in the URL.
+I used sudo cp to copy the .env.example file.
+chgrp changes the group that has access to files and directories.
+chmod is used to change the file mode bits of each given file according to mode.
 
 Commands:
    sudo apt-get install apache2
@@ -25,6 +28,13 @@ Commands:
    cd stunning-laravel
    cp .env.example .env
    sudo vim .env
+   sudo php artisan key:generate
+   apache2 -v
+   cd ../etc/apache2
+   sudo vim apache2.conf
+   cd sites-enabled
+   sudo vim 000-default.conf
+   sudo chgrp -R www-data storage bootstrap/cache
+   sudo chmod -R ug+rwx storage bootstrap/cachechmod
 
-
-IP Address:
+IP Address: 52.215.205.216
