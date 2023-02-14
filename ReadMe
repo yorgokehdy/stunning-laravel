@@ -18,7 +18,7 @@ Commands:
    sudo service apache2 restart
    cd /var/www/html
    pwd
-   sudo git clone (
+   sudo git clone https://github.com/yorgokehdy/stunning-laravel.git
 
 
 
