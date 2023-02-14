@@ -16,6 +16,9 @@ Commands:
    sudo apt-get install php-cli
    sudo apt-get install git
    sudo service apache2 restart
+   cd /var/www/html
+   pwd
+   sudo git clone (
 
 
 
