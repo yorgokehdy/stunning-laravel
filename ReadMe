@@ -2,6 +2,7 @@ Answers:
 
 sudo: adding sudo before a command lets the command run with elevated privileges, similar to "Run as administrator" when opening a software, it gives the commmand access of a superuser.
 apt-get: command used to get information and packages from authenticated resources.
+The issue with the curl command in checkpoint 3 was the -- right before installdir in the URL.
 
 Commands:
    sudo apt-get install apache2
@@ -19,7 +20,11 @@ Commands:
    cd /var/www/html
    pwd
    sudo git clone https://github.com/yorgokehdy/stunning-laravel.git
-
+   curl -sS https://getcomposer.org/installer | sudo php --installdir=/usr/local/bin — filename=composer
+   php composer.phar
+   cd stunning-laravel
+   cp .env.example .env
+   sudo vim .env
 
 
 IP Address:
